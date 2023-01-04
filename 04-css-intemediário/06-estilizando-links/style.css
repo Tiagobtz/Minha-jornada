@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+a {
+    cursor: progress;
+    margin: 20px;
+    padding: 10px;
+}
+
+a:visited {
+    color: black;
+}
+
+a:active {
+    color: green;
+}
+
+a:hover {
+    background-color: black;
+    color: white;
+}
