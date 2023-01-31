@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+@media (max-width: 992px) {
+
+     .secao-com-texto {
+        padding: 153px 25px;
+     }
+     .secao-com-texto p,
+     .secao-com-texto.onde-estamos p {
+        width: 100%;
+     }
+}
+
+@media (max-width: 768px) {
+     
+}
+
+@media (max-width: 720px) {
+    .ladrilho .grande,
+    .ladrilho .medio {
+        width: 100%;
+    }
+
+    .ladrilho .pequeno,
+    .ladrilho .pequeno.grao {
+        width: 50%;
+    }
+}
+
+@media (max-width: 425px) {
+     .cabecalho .logo {
+        display: block;
+        margin: 0 auto;
+     }
+
+     .cabecalho nav {
+        position: static;
+        text-align: center;
+        width: 100%;
+     }
+
+     .cabecalho nav ul li {
+        display: block;
+     }
+
+     .cabecalho nav ul li a {
+        width: 100%;
+        display: block;
+     }
+
+     .painel h2 {
+        font-size: 2.5rem;
+     }
+
+     .secao-com-texto h2 {
+        font-size: 3rem;
+     }
+
+     .secao-com-texto.onde-estamos p {
+        font-size: 2rem;
+     }
+
+}
+
+@media (max-width: 375px) {
+    .ladrilho .pequeno,
+    .ladrilho .pequeno.grao {
+        width: 100%;
+    }
+}

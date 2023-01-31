@@ -1,5 +1,13 @@
+@charset "UTF-8";
+
+html {
+    font-size: 62.5%;
+}
+
 body {
     max-width: 1440px;
+    margin: 0 auto;
+    font-size: 1.6rem;
 }
 
 .cabecalho {
@@ -128,4 +136,48 @@ body {
     position: absolute;
     top: 30%;
     left: 50%;
+}
+
+.rodape {
+    background: url(../images/fundo-rodape.jpg) center center no-repeat;
+    background-size: cover;
+    padding: 35px 30px;
+}
+
+.rodape ul {
+    float: right;
+}
+
+.rodape ul li {
+    display: inline-block;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.rodape ul li a {
+    color: white;
+}
+
+.rodape ul li a:hover {
+    font-weight: bold;
+}
+
+.rodape .copyright {
+    color: white;
+}
+
+.rodape .redes-sociais .facebook,
+.rodape .redes-sociais .instagram {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}
+
+.rodape .redes-sociais {
+    float: right;
+    clear: both;
+}
+
+.rodape .conteudo-de-baixo {
+    margin-top: 40px;
 }
