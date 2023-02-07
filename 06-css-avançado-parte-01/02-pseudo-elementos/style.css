@@ -1,0 +1,25 @@
+.first-letter::first-letter {
+    color: blue;
+}
+
+.first-line::first-line {
+    background-color: black;
+    color: white;
+}
+
+.first-line::first-letter {
+    color: chocolate;
+}
+
+li::marker {
+    color: red;
+    font-size: 23px;
+}
+
+#before::before {
+    content: " teste ";
+}
+
+#after::after {
+    content: " teste ";
+}
