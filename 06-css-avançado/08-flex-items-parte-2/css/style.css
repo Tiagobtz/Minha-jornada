@@ -5,3 +5,27 @@
 .flex-1 {
     flex: 1;
 }
+
+.item.item3 {
+   order: 0;
+}
+
+.align-self .item5{
+    align-self: auto;
+}
+
+.align-self.start .item3 {
+    align-self: flex-start;
+}
+
+.align-self.end .item3 {
+    align-self: flex-end;
+}
+
+.align-self.center .item3 {
+    align-self: center;
+}
+
+.align-self.stretch .item3 {
+    align-self: stretch;
+}
