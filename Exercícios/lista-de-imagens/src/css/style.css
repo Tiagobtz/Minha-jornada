@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+.painel {
+    display: flex;
+    padding: 50px 20px;
+}
+
+.pinturas {
+    width: 335px;
+    height: 432px;
+    margin-left: 20px;
+}
+
+.roma {
+    background: url(../images/rome.png);
+}
+
+.boa {
+    background: url(../images/boat.png);
+}
+
+.sand {
+    background: url(../images/sand-and-sea.png);
+}
+
+.starry {
+   background: url(../images/starry-night.png);
+}
