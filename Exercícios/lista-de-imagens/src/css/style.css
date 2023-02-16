@@ -1,28 +1,48 @@
 @charset "UTF-8";
 
-.painel {
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;800&display=swap');
+
+html {
+    font-family: 'Public Sans', sans-serif;
+}
+
+main {
     display: flex;
-    padding: 50px 20px;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 
 .pinturas {
-    width: 335px;
-    height: 432px;
-    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
-.roma {
-    background: url(../images/rome.png);
+.pinturas .pintura {
+    width: 235px;
+    height: 300px;
+    position: relative;
 }
 
-.boa {
-    background: url(../images/boat.png);
+.pinturas .pintura img {
+    width: 100%;
 }
 
-.sand {
-    background: url(../images/sand-and-sea.png);
+.pinturas .pintura .informacoes {
+   color: #ffffff;
+   position: absolute;
+   bottom: 40px;
+   left: 20px;
 }
 
-.starry {
-   background: url(../images/starry-night.png);
+.pinturas .pintura .informacoes .titulo {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.pinturas .pintura .informacoes .subtitulo {
+    font-weight: 300;
+    font-size: 17px;
 }

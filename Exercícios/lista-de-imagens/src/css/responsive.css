@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;800&display=swap');
+
+html {
+    font-family: 'Public Sans', sans-serif;
+}
+
+@media(max-width: 1013px) {
+    .pinturas {
+        max-width: 470px;
+        margin: 10px 0;
+        gap: 0;
+    }
+}
