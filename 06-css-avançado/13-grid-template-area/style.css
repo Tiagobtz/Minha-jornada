@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    /*grid-template-areas: "header header header"
+    "menu secao-principal aside"
+    "footer footer footer" */
+
+    grid:
+    "header header header" 100px         
+    "menu secao-principal aside" 500px    /* altura de linhas */
+    "footer footer footer" 150px
+    
+    / 200px auto 200px;  /* largura de colunas */
+}
+
+.cabecalho {
+    background-color: aquamarine;
+    grid-area: header;
+}
+
+.menu {
+    background-color: rgb(92, 92, 248);
+    grid-area: menu;
+}
+
+.secao-principal {
+    background-color: hotpink;
+    grid-area: secao-principal;
+}
+
+.aside {
+    background-color: orangered;
+    grid-area: aside;
+}
+
+.rodape {
+    background-color: green;
+    grid-area: footer;
+}
