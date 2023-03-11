@@ -1,24 +1,36 @@
 @charset "UTF-8";
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
+    max-width: 900px;
     display: grid;
     grid-template-areas: "video-destaque propaganda"
                           "video-destaque sugeridos";
     grid-template-columns: 1fr 270px;
     grid-template-rows: 56px 1fr;
+
+    padding: 35px;
 }
 
 .video-destaque {
     grid-area: video-destaque;
-    background-color: aquamarine;
+    width: 100%;
 }
 
 .propaganda {
     grid-area: propaganda;
-    background-color: blueviolet;
 }
 
 .sugeridos {
     grid-area: sugeridos;
-    background-color: burlywood;
+}
+
+.sugeridos .video {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 5px;
 }
