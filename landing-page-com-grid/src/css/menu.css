@@ -25,6 +25,7 @@ header nav ul li  a:hover {
 .header nav label {
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 
 .header .hamburguer {
@@ -35,7 +36,7 @@ header nav ul li  a:hover {
     height: 2px;
     top: 29px;
     left: 15px;
-    transition: 0,5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 .header .hamburguer:before,

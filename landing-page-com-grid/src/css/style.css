@@ -7,7 +7,6 @@ html {
 }
 
 body {
-    background-color: rgb(245, 166, 92);
     display: grid;
     grid-template-areas: "header header header header"
                          "hero hero hero hero"
@@ -47,10 +46,52 @@ body {
 
 .hero {
     grid-area: hero;
+    height: 79vh;
+    background: url('../images/lemons.jpg') center center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero h2 {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+.hero:after {
+    content: url('../images/seta_preta.png');
+    position: absolute;
+    height: 35px;
+    bottom: 40px;
+    animation: downarrow 0.6s infinite alternate ease-in-out;
+}
+
+@keyframes downarrow{
+    0% {-webkit-transform: translateY(0);
+         opacity: 0.4;}
+    100% {
+        -webkit-transform: translateY(0.4em);
+        opacity: 0.9;
+    }
+}
+
+@media (max-width: 425px) {
+    .hero {
+        height: 60vh;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
 }
 
 .about {
     grid-area: about;
+    background-color: white;
+    height: 30vh;
 }
 
 .services {
