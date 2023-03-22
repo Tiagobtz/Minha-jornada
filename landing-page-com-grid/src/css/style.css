@@ -201,6 +201,31 @@ body {
 
 .projects {
     grid-area: projects;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.project img {
+    height: 100%;
+    transition: 0.3s;
+}
+
+.project a:hover img {
+    opacity: 0.8;
+}
+
+@media (max-width:800px) {
+    .projects {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media (max-width:500px) {
+    .projects {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
 }
 
 .footer {
