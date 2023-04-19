@@ -5,6 +5,7 @@ let tenis = {
     emEstoque: true
 }
 // PARA ADCIONAR UMA PROPRIEDADE E UM VALOR APÓS O OBJETO JÁ TER SIDO DECLARADO.
+// OBJETO.PROPRIEDADE = VALOR
 tenis.valor = 150
 
 console.log(tenis.valor)
