@@ -5,7 +5,7 @@
 
 // this.nome = 'Tiago'
 // function saudar(){
-//     console.log('this no contexto de função', this)
+//     console.log('this no contexto de função', this) //FICAR SEMPRE ATENTO AO ESCOPO AO UTILIZAR O THIS
 //     console.log(`Olá ${this.nome}`)
 // }
 // saudar()
