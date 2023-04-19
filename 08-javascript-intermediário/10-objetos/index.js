@@ -1,0 +1,10 @@
+let tenis = {
+// PARA ADCIONAR AS CARACTERÍSTICAS DO OBJETO, PRIMEIRO VOCÊ DEVE DECLARAR A PROPRIEDADE E EM SEGUIDA SEU VALOR.
+    cor: 'Preta',
+    tamanho: 38,
+    emEstoque: true
+}
+// PARA ADCIONAR UMA PROPRIEDADE E UM VALOR APÓS O OBJETO JÁ TER SIDO DECLARADO.
+tenis.valor = 150
+
+console.log(tenis.valor)
