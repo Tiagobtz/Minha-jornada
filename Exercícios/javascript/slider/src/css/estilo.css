@@ -63,10 +63,42 @@
 }
 
 .conteudo {
-    display: block;
     background-color: #fff;
     margin-left: 180px;
     padding: 65px 60px;
     width: 620px;
     border-radius: 10px;
+}
+
+.conteudo .titulo {
+    margin-bottom: 80px;
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+.conteudo .texto {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.conteudo .botao {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.botao.rosa {
+    color: #c50000;
+}
+
+.botao.verde {
+    color: #d9dd10;
+}
+
+.botao.laranja {
+    color: #a63a17;
+}
+
+.botao.azul {
+    color: #10acdd;
 }
