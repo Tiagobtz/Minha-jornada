@@ -4,6 +4,8 @@ const setaAvancar = document.getElementById('seta-avancar')
 
 let imagemAtual = 0
 
+mostrarOuEsconderSetas()
+
 setaAvancar.addEventListener("click", function (){
     
     if (imagemAtual === imagens.length -1){
