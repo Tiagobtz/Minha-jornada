@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+html {
+    background-color: #e5e5e5;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.acordeon {
+    display: flex;
+    align-items: center;
+    width: 600px;
+    position: relative;
+}
+
+.acordeon .ilustracao {
+    position: absolute;
+}
