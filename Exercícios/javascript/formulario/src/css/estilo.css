@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    background-image: url(../imagens/bg-repeat.jpg);
+    background-repeat: repeat;
+    font-family: 'Roboto', sans-serif;
+}
+
+.principal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 80px;
+}
+
+.info {
+    max-width: 300px;
+    height: 100px;
+    color: #fff;
+    margin-top: 130px;
+    margin-left: 150px;
+}
+
+.info h1 {
+    padding-bottom: 12px;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.info p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.formulario {
+    max-width: 350px;
+    height: 380px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.entradas {
+    width: 300px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    margin: 12px;
+    padding: 2px;
+}
+
+.tamanhos-iguais {
+    height: 35px;
+}
+
+.botao {
+    height: 40px;
+    background-color: #3CCC87;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    width: 300px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    margin: 12px;
+}
+
+.entradas.campo-obrigatorio {
+    border: 2px solid #fe1010;
+}
+
+label {
+    font-size: 8px;
+    font-weight: 400;
+    width: 66px;
+    height: 9px;
+}
