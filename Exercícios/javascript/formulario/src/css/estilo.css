@@ -1,78 +1,108 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 body {
-    background-image: url(../imagens/bg-repeat.jpg);
+    background-image: linear-gradient(to right, rgb(1, 1, 70), rgb(35, 13, 71), rgb(62, 25, 25));
     background-repeat: repeat;
     font-family: 'Roboto', sans-serif;
 }
 
 .principal {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 80px;
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    align-items: center;
 }
 
-.info {
-    max-width: 300px;
-    height: 100px;
+.introducao {
+    max-width: 400px;
+}
+
+.introducao .textos {
     color: #fff;
-    margin-top: 130px;
-    margin-left: 150px;
+    margin-top: 50px;
 }
 
-.info h1 {
-    padding-bottom: 12px;
+.introducao .textos h1 {
+    margin-bottom: 20px;
     font-size: 20px;
     font-weight: 900;
 }
 
-.info p {
+.introducao .textos p {
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
-.formulario {
-    max-width: 350px;
-    height: 380px;
-    background-color: #fff;
+
+#formulario {
     display: flex;
     flex-direction: column;
-    margin-left: 120px;
+    align-items: center;
+    background-color: #fff;
+    width: 350px;
+    height: 500px;
     padding: 10px;
     border-radius: 10px;
+    margin-top: 100px;
 }
 
-.entradas {
-    width: 300px;
-    border: 1px solid #000000;
-    border-radius: 5px;
+h2 {
+    font-size: 20px;
+    color: #0d6138;
+}
+
+.dados {
+    display: flex;
+    flex-direction: column;
     margin: 12px;
-    padding: 2px;
 }
 
-.tamanhos-iguais {
-    height: 35px;
+.inputs {
+    width: 290px;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 2px black;
 }
 
 .botao {
-    height: 40px;
-    background-color: #3CCC87;
+    width: 290px;
+    height: 50px;
+    padding: 8px;
     color: #fff;
-    font-size: 15px;
-    font-weight: 700;
-    width: 300px;
-    border: 1px solid #000000;
+    background-color: #0d6138;
+    font-weight: 800;
+    border: none;
     border-radius: 5px;
-    margin: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
 }
 
-.entradas.campo-obrigatorio {
-    border: 2px solid #fe1010;
+.botao:hover {
+    background-color: #058d24;
 }
 
-label {
-    font-size: 8px;
-    font-weight: 400;
-    width: 66px;
-    height: 9px;
+small {
+    display: none;
+    font-size: 10px;
+}
+
+small.erro {
+    display: block;
+    color: red;
+}
+
+.inputs.erro {
+    border: solid 2px rgb(255, 36, 16);
+}
+
+.inputs.correto {
+    border-color: green;
+}
+
+.envio-de-dados {
+    transition: 1s;
+    margin-top: 20px;
+    font-size: 18px;
+    color: green;
 }

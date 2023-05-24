@@ -10,19 +10,43 @@
     <link rel="stylesheet" href="src/css/estilo.css">
 </head>
 <body>
-    <main class="principal">
-        <section class="info">
-            <h1>FICOU COM DÚVIDA? <br> NOS MANDE UMA MENSAGEM!</h1>
-            <p>caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
-        </section>
-        <section class="formulario">
-            <input class="entradas tamanhos-iguais campo-obrigatorio" type="text" placeholder="Nome completo">
-            <input class="entradas tamanhos-iguais" type="email" name="email" placeholder="E-mail">
-            <input class="entradas tamanhos-iguais" type="number" name="telefone" placeholder="Telefone">
-            <textarea class="entradas" name="mensagem" cols="30" rows="10" placeholder="Mensagem"></textarea>
-            <button class="botao">Enviar</button>
-        </section>
-    </main>
+   <section class="principal">
+        <div class="introducao">
+            <div class="textos">
+                <h1>FICOU COM DÚVIDA? <br>
+                    NOS MANDE UMA MENSAGEM!</h1>
+                
+                <p>caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
+            </div>
+        </div>
+
+        <form id="formulario">
+
+            <h2>Cadastre-se</h2>
+
+            <div class="nome-input dados">
+                    <input class="inputs" data-input="nome" type="text" placeholder="Digite seu nome">
+                    <small>Campo obrigatório*</small>
+            </div>
+            <div class="email-input dados">
+                    <input class="inputs" data-input="email" type="email" placeholder="Digite seu e-mail">
+                    <small>Campo obrigatório*</small>
+            </div>
+            <div class="telefone dados">
+                    <input class="inputs" data-input="telefone" type="number" placeholder="Digite seu telefone ">
+                    <small>Campo obrigatório*</small>
+            </div>
+            <div class="mensagem dados">
+                    <textarea class="inputs" data-input="mensagem" cols="30" rows="10" placeholder="Mensagem"></textarea>
+                    <small>Campo obrigatório*</small>
+            </div>
+            <button class="botao" type="button">Enviar</button>
+
+            <div class="envio-de-dados">
+                    
+            </div>
+        </form>
+   </section>
 
     <script src="src/js/formulario.js"></script>
     
