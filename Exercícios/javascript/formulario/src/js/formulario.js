@@ -8,7 +8,9 @@ const botao = document.querySelector(".botao")
 const enviado = document.querySelector(".envio-de-dados")
 
 botao.addEventListener("click", function(){
+    
     if (nome.value === '' || email.value === '' || telefone.value === '' || mensagem.value === ''){
+        
         smalls.forEach(function(small){
             small.classList.add("erro")        
         })
@@ -18,11 +20,15 @@ botao.addEventListener("click", function(){
         })
     
     }else{
+        
         smalls.forEach(function(small){
             small.classList.remove("erro")
         })
-         inputs.forEach(function(input){input.classList.add("correto")
+         
+        inputs.forEach(function(input){
+            input.classList.add("correto")
         })
+        
         enviado.innerHTML = "Dados enviados"
      }
 })

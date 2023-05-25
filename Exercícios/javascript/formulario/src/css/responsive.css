@@ -1,0 +1,30 @@
+@media(max-width: 800px){
+    .principal {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .introducao {
+        margin-right: 0;
+    }
+
+    .introducao .textos {
+        text-align: center;
+    }
+
+    .introducao .textos h1 {
+        font-size: 15px;
+    }
+
+    .introducao .textos p {
+        font-size: 12px;
+    }
+
+    #formulario {
+        max-width: 320px;
+        margin-top: 20px;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
