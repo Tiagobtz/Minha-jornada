@@ -1,3 +1,5 @@
+// O método FILTER como o próprio nome já diz, irá filtrar um determinado ARRAY e criar um novo de acordo com o resultado do teste de uma determinada condição.
+
 let pessoas = [ // Array
     {nome: 'Tiago', idade: 26},
     {nome: 'João', idade: 30},      // Objetos

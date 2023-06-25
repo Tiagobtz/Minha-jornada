@@ -1,3 +1,6 @@
+// O método REDUCE irá transformar os valores presentes em um ARRAY em um único valor, como por exemplo o resultado da soma de valores de um ARRAY.
+
+
 let ordens = [
     {cliente: 'Tiago', tipo: 'compra', quantidade: 56, ativo: 'NFLX34'},
     {cliente: 'Maria', tipo: 'compra', quantidade: 76, ativo: 'AAPL34'},
@@ -14,7 +17,7 @@ let ordens = [
 
 // console.log(quantidadeDeOrdens)
 
-// Utilizando o método MAP para somar valores de um objeto dentro de um array
+// Utilizando o método REDUCE para somar valores de um objeto dentro de um array
 
 // let quantidadeDeOrdens = ordens.reduce(function(somaOrdens, ordem){
 //     return somaOrdens + ordem.quantidade
