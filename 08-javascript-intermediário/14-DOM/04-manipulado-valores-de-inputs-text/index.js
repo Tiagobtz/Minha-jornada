@@ -1,5 +1,5 @@
 function adicaoDeCaractere(){
-    // Selecionando o valor digitado no input
+    // Selecionando o valor digitado no input e atribuindo ele a variável 'caractere'
     let caractere = document.getElementById('entrada').value
 
     // Limpar o campo de digitação
