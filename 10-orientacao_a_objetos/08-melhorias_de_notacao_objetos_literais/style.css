@@ -1,0 +1,13 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+input {
+    width: 100px;
+}
+
+button {
+    width: 80px;
+}
