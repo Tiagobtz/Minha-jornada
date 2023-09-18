@@ -44,5 +44,5 @@ class Cachorro extends Animal{
     }
 }
 
-let cahorro = new Cachorro('Branco', 50, 150)
-console.log(cahorro)
+let cachorro = new Cachorro('Branco', 50, 150)
+console.log(cachorro)
