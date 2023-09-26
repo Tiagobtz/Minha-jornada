@@ -13,58 +13,41 @@
 
     <style type="text/css">
         
-        /*Small devices (landscape phones)*/
-        @media (min-width: 576px) {
-            body {
-                background: red;
-            }
-        }
-
-        /*Medium devices (tablets, 768px e superior)*/
-        @media (min-width: 768px) {
-            body {
-                background: blue;
-            }
-        }
-
-        /*Large devices (desktops, 992px e superior)*/
-        @media () {}
-
-        /*Extra large devices (large desktops, 1200px e superior)*/
-        @media () {}
-
-
-
-        /**************************/
-        /* Extra small devices (portraint phones) */
-        @media () {}
-
-        /* Small devices (Landscape Phones) */
-        @media () {}
-
-        /* Medium devices (Tablets) */
-        @media () {}
-
-        /* Large devices (Desktops) */
-        @media () {}
-
-
-
         /******************************************/
         /*Extra small devices (portrait phones, menor que 576px)*/
-        @media () {}
+        @media (max-width:575.98px) {
+          body {
+            background-color: blue;
+          }
+        }
 
         /*Small devices (landscape phones, 576px e maiores)*/
-        @media () and () {}
+        @media (min-width:576px) and (max-width:767.98px) {
+          body {
+            background-color: red;
+          }
+        }
 
         /*Medium devices (tablets, 768px e maiores)*/
-        @media () and () {}
+        @media (min-width:768px) and (max-width:991.98px) {
+          body {
+            background-color: black;
+          }
+        }
 
         /*Large devices (desktops, 992px e maiores)*/
-        @media () and () {}
+        @media (min-width:992px) and (max-width: 1199.98px) {
+          body {
+            background-color: yellow;
+          }
+        }
 
         /*Extra large devices (large desktops, 1200px  e maiores)*/
-        @media () {}
+        @media (min-width:1200px) {
+          body {
+            background-color: gray;
+          }
+        }
 
     </style>
 
