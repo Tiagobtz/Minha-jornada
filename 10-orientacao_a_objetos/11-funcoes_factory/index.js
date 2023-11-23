@@ -1,13 +1,19 @@
-let bicicletaFactory = function(cor, marcha, aro){
-    return {
-        cor,
-        marcha,
-        aro,
-        pedalar(){console.log('O MÉTODO FOI EXECUTADO.')}
+// Declarando a entidade (classe) Pessoa
+class Pessoa {
+    idade = 0
+
+    constructor(nome){
+        this.nome = nome
     }
 }
 
-let bicicleta1 = bicicletaFactory('Preta', 21, 26)
-let bicicleta2 = bicicletaFactory('Vemelha', 18, 12)
-console.log(bicicleta1)
-console.log(bicicleta2)
+// Criando a função 'factory'
+function criarPessoa(nome, idade){
+    let p = new Pessoa(nome)
+    p.idade = idade
+    return p
+}
+
+// Atribuindo o retorno da função factory a variável p1
+let p1 = criarPessoa('Tiago', 27)
+console.log(`${p1.nome} tem ${p1.idade} anos`)
