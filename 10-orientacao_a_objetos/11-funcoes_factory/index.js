@@ -17,3 +17,19 @@ function criarPessoa(nome, idade){
 // Atribuindo o retorno da função factory a variável p1
 let p1 = criarPessoa('Tiago', 27)
 console.log(`${p1.nome} tem ${p1.idade} anos`)
+
+// Programação funcional (factory)
+
+function criarCarro(modelo, ano, cor){
+    return {
+        modelo,
+        ano,
+        cor,
+        dadosDoCarro(){
+            return `Modelo: ${this.modelo} Ano: ${this.ano} Cor: ${this.cor}`
+        }
+    }
+}
+
+let carro_1 = criarCarro('Corolla', 2023, 'prata')
+console.log(carro_1.dadosDoCarro())
