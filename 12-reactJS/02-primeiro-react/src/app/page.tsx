@@ -1,4 +1,5 @@
 import {GeoForms} from "@/components/geoForms"
+import { Person } from "@/components/person";
 
 function Page(){
   return (
@@ -7,6 +8,7 @@ function Page(){
       <h3>Outro teste</h3>
 
       <GeoForms/>
+      <Person/>
     </div>
   );
 }
