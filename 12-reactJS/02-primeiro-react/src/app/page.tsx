@@ -9,7 +9,6 @@ function Page(){
 
       <GeoForms/>
       <Person/>
-      <Person/>
     </div>
   );
 }
