@@ -7,3 +7,4 @@ export type estudante = {
     nota1: number
     nota2: number
 }
+    

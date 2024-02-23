@@ -1,4 +1,3 @@
-import { table } from "console"
 import { estudante } from "../tipos/estudante"
 
 type Props = {

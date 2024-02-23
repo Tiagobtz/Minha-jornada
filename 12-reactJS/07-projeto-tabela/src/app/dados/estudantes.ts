@@ -40,4 +40,4 @@ export const estudantes: estudante[] = [
         nota1: 10.0,
         nota2: 8.0,
     },
-] 
+]
