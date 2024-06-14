@@ -1,7 +1,7 @@
 "use client"
 
 export const Page = () => {
-  function clicarBotao(){
+  const clicarBotao = () => {
     alert('Você clicou')
   }
   return (
