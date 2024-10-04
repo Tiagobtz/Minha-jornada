@@ -7,14 +7,17 @@ import { pessoa } from "./types/pessoa"
 
 export const Page = () => {
   const [nomeCompleto, setNomeCompleto] = useState<pessoa>({nome: 'Tiago', sobrenome: 'Henrique'})
+  const botaoLimpar = () => {
+    setNomeCompleto({nome: '', sobrenome: ''})
+  }
 
   return(
     <div className="w-screen h-screen flex flex-col justify-center items-center text-3xl">
-      <input type="text" className="border border-gray-900 p-3 rounded-md" placeholder="Seu primeiro nome" onChange={e => setNomeCompleto({...nomeCompleto, nome: e.target.value})} />
-      <input type="text" className="border border-gray-900 p-3 rounded-md mt-3" placeholder="Seu sobrenome" onChange={e => setNomeCompleto({...nomeCompleto, sobrenome: e.target.value})} />
+      <input type="text" className="border border-gray-800 rounded-md p-3" placeholder="Digite seu nome" value={nomeCompleto.nome} onChange={e => setNomeCompleto({...nomeCompleto, nome: e.target.value})} />
+      <input type="text" className="border border-gray-800 rounded-md p-3 mt-3" placeholder="Digite seu sobrenome" value={nomeCompleto.sobrenome} onChange={e => setNomeCompleto({...nomeCompleto, sobrenome: e.target.value})} />
       <p className="mt-3">Seu nome completo é:</p>
       <p className="font-bold mt-3">{nomeCompleto.nome} {nomeCompleto.sobrenome}</p>
-      <button className="border bg-blue-600 text-white p-3 rounded-md mt-3">Limpar tudo</button>
+      <button className="border bg-blue-600 text-white p-3 rounded-md mt-3" onClick={botaoLimpar}>Limpar tudo</button>
     </div>
   )
 }
