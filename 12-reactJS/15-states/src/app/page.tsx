@@ -1,9 +1,64 @@
 "use client"
 
 import { useState } from "react"
+import { Lista } from "./types/Lista"
+
+// ARRAYS COM STATES
+
+export const Page = () => {
+  const [lista, setLista] = useState<Lista[]>([
+    {label: 'Estudar a noite', checked: false},
+    {label: 'Tomar banho antes de dormir', checked: false},
+  ])
+
+  const [itemInput, setItemInput] = useState('')
+
+  const botaoAdcionar = () => {
+    if (itemInput.trim() === '') return
+    setLista([
+      ...lista, {label: itemInput, checked: false},
+    ])
+    setItemInput('')
+  }
+
+  const deletarItem = (index: number) => {
+    setLista(
+      lista.filter((item, key) => key !== index)
+    )
+  }
+
+  return(
+    <div className="w-screen h-screen flex flex-col items-center mt-5">
+      <h1 className="text-4xl">Lista de tarefas</h1>
+
+      <div className="flex w-full max-w-lg my-3 p-4 rounded-md bg-gray-700 border border-gray-800">
+        <input type="text" placeholder="O que deseja fazer?" className="flex-1 border border-black p-3 text-2xl text-black rounded-md mr-3" value={itemInput} onChange={e => setItemInput(e.target.value)}/>
+        <button className="text-white font-semibold" onClick={botaoAdcionar}>Adcionar</button>
+      </div>
+
+      <p>{lista.length} Itens na lista</p>
+
+      <ul className="w-full max-w-lg list-disc pl-5 text-2xl">
+        {
+          lista.map((item, index) => (
+            <li key={index}>{item.label} - <button onClick={() => deletarItem(index)}>[ Deletar ]</button></li>
+          ))
+        }
+      </ul>
+    </div>
+  )
+}
+export default Page
+
+
+
+
+
+
+/*
 import { pessoa } from "./types/pessoa"
 
-// Atualizando objetos com states
+// ATUALIZANDO OBJETOS COM STATES
 
 export const Page = () => {
   const [nomeCompleto, setNomeCompleto] = useState<pessoa>({nome: 'Tiago', sobrenome: 'Henrique'})
@@ -22,6 +77,7 @@ export const Page = () => {
   )
 }
 export default Page
+*/
 
 /*
 export const Page = () => {
